@@ -13,7 +13,10 @@ public class Word {
     private String mMiwokTranslation;
 
     /** ImageResourceID of the word */
-    private int mImageResourceID;
+    private int mImageResourceID = NO_PICTURE;
+
+    /** There is no ImageResourceID */
+    public static final int NO_PICTURE = -1;
 
     public Word(String defaultTranslation, String miwokTranslation) {
         mDefaultTranslation = defaultTranslation;
